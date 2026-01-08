@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* light blue border around the quiz container */
+.quiz-container {
+    border: 2px solid #add8e6; /* lightblue */
+}
+
+/* heading color and question spacing */
+#question {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.quiz-container h2 {
+    color: #003366; /* dark blue heading */
+    margin-top: 0;
+}
+
+.options button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #28a745; /* green */
+    color: #ffffff; /* white text */
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+}
+
+.options button:hover {
+    background-color: #218838; /* slightly darker green on hover */
+}
+
+/* disabled state for buttons */
+.options button:disabled,
+.nav-buttons button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Navigation buttons (Previous / Next) side-by-side with equal width */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nav-buttons button {
+    flex: 1; /* equal width */
+    padding: 10px;
+    cursor: pointer;
+    background-color: #add8e6; /* light blue */
+    color: #003366; /* dark blue text for contrast */
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #87cefa; /* slightly darker/light sky blue on hover */
+}
+
+/* keep backward compatibility for .next/.prev selectors if needed */
+.next, .prev {
+    border: none;
+}

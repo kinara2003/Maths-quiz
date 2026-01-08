@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maths Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h2>Maths Quiz</h2>
+    <div id="question">Question appears here</div>
+
+    <div class="options">
+        <button onclick="checkAnswer(0)" id="opt0"></button>
+        <button onclick="checkAnswer(1)" id="opt1"></button>
+        <button onclick="checkAnswer(2)" id="opt2"></button>
+        <button onclick="checkAnswer(3)" id="opt3"></button>
+    </div>
+
+    <div class="nav-buttons">
+    <button class="prev" onclick="prevQuestion()">Back</button>
+        <button class="next" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <h3 id="score"></h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
